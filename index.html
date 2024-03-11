@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <img
+          src="img/1.jpg"
+          onclick="openModal(); currentSlide(1)"
+          class="hover-shadow"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/2.jpg"
+          onclick="openModal(); currentSlide(2)"
+          class="hover-shadow"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/3.jpg"
+          onclick="openModal(); currentSlide(3)"
+          class="hover-shadow"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="img/4.jpg"
+          onclick="openModal(); currentSlide(4)"
+          class="hover-shadow"
+        />
+      </div>
+    </div>
+
+    <div class="modal" id="myModal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/1.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/2.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/3.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="img/4.jpg" style="width: 100%" />
+        </div>
+
+        <a onclick="plusSlides(-1)" class="prev">&#10094</a>
+        <a onclick="plusSlides(1)" class="next">&#10095</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="column">
+            <img src="img/1.jpg" onclick="currentSlide(1)" class="demo" alt="Nature">
+        </div>
+
+        <div class="column">
+            <img src="img/2.jpg" onclick="currentSlide(1)" class="demo" alt="Snow">
+        </div>
+
+        <div class="column">
+            <img src="img/3.jpg" onclick="currentSlide(1)" class="demo" alt="Mountains">
+        </div>
+
+        <div class="column">
+            <img src="img/4.jpg" onclick="currentSlide(1)" class="demo" alt="Lights">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
